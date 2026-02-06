@@ -41,176 +41,378 @@
 
   <!-- MAIN CONTENT -->
   <main id="main-content" role="main">
-
     <!-- HERO SECTION -->
     <section id="hero">
       <div class="hero-container">
-	<!-- TEXT CONTENT -->
-        <div class="hero-text">
-          <h1>My Journey!</h1>
-          <p>What started as a weekend experiment building an AI assistant turned into a full-blown passion for software engineering. Today, I’m on a mission to harness technology— from speech recognition to user-centered design— to solve real-world problems and open new career doors. I’d love for you to explore my projects and join me on this path toward innovation.</p>
-	  <div>
-            <a href="Harold_Durant_Resume.pdf" target="_blank" rel="noopener noreferrer" download="Harold_Durant_Resume.pdf">Hire Me</a>
-            <a href="contact/index.html">Let's talk</a>
-	  </div>
+        
+        <div class="hero-content">
+          <p class="hero-greeting">Hi, I'm Harold Durant</p>
+          
+          <h1 class="hero-title">
+            I build web applications that solve real problems
+          </h1>
+          
+          <p class="hero-description">
+            I'm a self-taught developer who came to tech through curiosity about 
+            AI and stayed for the ability to create things that matter. I specialize 
+            in building full-stack web applications with clean code and user-focused design.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="#portfolio-web" class="cta-primary">View My Work</a>
+            <a href="contact/index.html" class="cta-secondary">Get In Touch</a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Self-Taught</span>
+            </div>
+          </div>
         </div>
-	<!-- VIDEO CONTAINER -->
-	<div class="video-container">        
-          <video class="intro-video" controls autoplay muted loop playsinline preload="metadata" poster="images/favicon.png" alt="Video thumbnail showing Harold Durant" aria-label="30-second introduction video about Harold Durant's software engineering journey">
-	    <source src="assets/videos/intro.mp4" type="video/mp4">
-	    <source src="assets/videos/intro.webm" type="video/webm">
-	    <!-- FALLBACK IMAGE IF VIDEO DOESN'T LOAD -->
-	    <img src="images/favicon.png" alt="Photo of Harold Durant" loading="lazy">
-	  </video>
-	</div>
+        
+        <div class="hero-visual">
+          <!-- Option 1: Your photo -->
+          <img src="images/profile-photo.jpg" alt="Harold Durant" class="hero-image">
+        </div>
+        
       </div>
     </section>
 
-  <!-- TECH STACK SECTION -->
-  <section id="tech-stack" class="section-set">
-    <div class="tech-container">
-      <h2 class="tech-title">Technologies I Work With</h2>
-      <p class="tech-intro">
-        Here are the tools and technologies I use to build modern web applications
-      </p>
-      
-      <div class="tech-grid">
+    <!-- TECH STACK SECTION -->
+    <section id="tech-stack" class="section-set">
+      <div class="tech-container">
+        <h2 class="tech-title">Technologies I Work With</h2>
+        <p class="tech-intro">
+          Here are the tools and technologies I use to build modern web applications
+        </p>
         
-        <!-- Frontend Technologies -->
-        <div class="tech-category">
-          <h3 class="category-title">Frontend</h3>
-          <div class="tech-items">
-            
-            <div class="tech-item">
-              <svg class="tech-icon" aria-hidden="true">
-                <use href="#javascript"></use>
-              </svg>
-              <div class="tech-info">
-                <h4>JavaScript</h4>
-                <p class="tech-level">Proficient</p>
-                <p class="tech-description">ES6+, async/await, DOM manipulation</p>
+        <div class="tech-grid">
+          
+          <!-- Frontend Technologies -->
+          <div class="tech-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="tech-items">
+              
+              <div class="tech-item">
+                <svg class="tech-icon" aria-hidden="true">
+                  <use href="#javascript"></use>
+                </svg>
+                <div class="tech-info">
+                  <h4>JavaScript</h4>
+                  <p class="tech-level">Proficient</p>
+                  <p class="tech-description">ES6+, async/await, DOM manipulation</p>
+                </div>
               </div>
-            </div>
-            
-            <div class="tech-item">
-              <svg class="tech-icon" aria-hidden="true">
-                <use href="#html"></use>
-              </svg>
-              <div class="tech-info">
-                <h4>HTML5</h4>
-                <p class="tech-level">Proficient</p>
-                <p class="tech-description">Semantic markup, accessibility, forms</p>
+              
+              <div class="tech-item">
+                <svg class="tech-icon" aria-hidden="true">
+                  <use href="#html"></use>
+                </svg>
+                <div class="tech-info">
+                  <h4>HTML5</h4>
+                  <p class="tech-level">Proficient</p>
+                  <p class="tech-description">Semantic markup, accessibility, forms</p>
+                </div>
               </div>
-            </div>
-            
-            <div class="tech-item">
-              <svg class="tech-icon" aria-hidden="true">
-                <use href="#css3"></use>
-              </svg>
-              <div class="tech-info">
-                <h4>CSS3</h4>
-                <p class="tech-level">Proficient</p>
-                <p class="tech-description">Flexbox, Grid, responsive design</p>
+              
+              <div class="tech-item">
+                <svg class="tech-icon" aria-hidden="true">
+                  <use href="#css3"></use>
+                </svg>
+                <div class="tech-info">
+                  <h4>CSS3</h4>
+                  <p class="tech-level">Proficient</p>
+                  <p class="tech-description">Flexbox, Grid, responsive design</p>
+                </div>
               </div>
+              
             </div>
-            
           </div>
-        </div>
-        
-        <!-- Backend Technologies -->
-        <div class="tech-category">
-          <h3 class="category-title">Backend</h3>
-          <div class="tech-items">
-            
-            <div class="tech-item">
-              <svg class="tech-icon" aria-hidden="true">
-                <use href="#nodejs"></use>
-              </svg>
-              <div class="tech-info">
-                <h4>Node.js</h4>
-                <p class="tech-level">Intermediate</p>
-                <p class="tech-description">Express, REST APIs, server-side logic</p>
+          
+          <!-- Backend Technologies -->
+          <div class="tech-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="tech-items">
+              
+              <div class="tech-item">
+                <svg class="tech-icon" aria-hidden="true">
+                  <use href="#nodejs"></use>
+                </svg>
+                <div class="tech-info">
+                  <h4>Node.js</h4>
+                  <p class="tech-level">Intermediate</p>
+                  <p class="tech-description">Express, REST APIs, server-side logic</p>
+                </div>
               </div>
-            </div>
-            
-            <div class="tech-item">
-              <svg class="tech-icon" aria-hidden="true">
-                <use href="#python"></use>
-              </svg>
-              <div class="tech-info">
-                <h4>Python</h4>
-                <p class="tech-level">Learning</p>
-                <p class="tech-description">Scripting, data processing basics</p>
+              
+              <div class="tech-item">
+                <svg class="tech-icon" aria-hidden="true">
+                  <use href="#python"></use>
+                </svg>
+                <div class="tech-info">
+                  <h4>Python</h4>
+                  <p class="tech-level">Learning</p>
+                  <p class="tech-description">Scripting, data processing basics</p>
+                </div>
               </div>
+              
             </div>
-            
           </div>
-        </div>
-        
-        <!-- Tools & Workflow -->
-        <div class="tech-category">
-          <h3 class="category-title">Tools</h3>
-          <div class="tech-items">
-            
-            <div class="tech-item">
-              <svg class="tech-icon" aria-hidden="true">
-                <use href="#git"></use>
-              </svg>
-              <div class="tech-info">
-                <h4>Git</h4>
-                <p class="tech-level">Proficient</p>
-                <p class="tech-description">Version control, branching, collaboration</p>
+          
+          <!-- Tools & Workflow -->
+          <div class="tech-category">
+            <h3 class="category-title">Tools</h3>
+            <div class="tech-items">
+              
+              <div class="tech-item">
+                <svg class="tech-icon" aria-hidden="true">
+                  <use href="#git"></use>
+                </svg>
+                <div class="tech-info">
+                  <h4>Git</h4>
+                  <p class="tech-level">Proficient</p>
+                  <p class="tech-description">Version control, branching, collaboration</p>
+                </div>
               </div>
+              
             </div>
-            
           </div>
+          
         </div>
-        
       </div>
-    </div>
-  </section>
+    </section>
 
-    <!-- PORTFOLIO WEBSITE -->
+    <!-- PROJECTS SECTION -->
     <section id="portfolio-web" class="section-set">
-      <div class="section-container">
-        <div class="section-image-container">
-          <img src="images/pw.png" alt="Screenshot of my responsive portfolio homepage showing the hero section with introductory text and a video thumbnail." class="section-image" loading="lazy" width="400" height="300">
-        </div>
-        <div class="section-text">
-          <h2 class="section-title">Portfolio Website</h2>
-          <p class="section-copy">A responsive, performance-optimized portfolio built with semantic HTML, modular CSS, and vanilla JavaScript. Features a video introduction, interactive project showcases, and an accessibility-focused design that highlights my AI, full-stack, and UX projects.</p>
-          <a href="https://portfolio-web-six-ashen.vercel.app/" rel="noopener noreferrer" target="_blank" class="learn-more">View Demo</a>
+      <div class="projects-container">
+        
+        <h2 class="projects-title">Featured Projects</h2>
+        <p class="projects-intro">
+          Here are some of my recent projects that showcase my development skills
+        </p>
+
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <div class="project-image-container">
+            <img 
+              src="images/project1-screenshot.jpg" 
+              alt="Screenshot of Portfolio Website project"
+              class="project-image"
+            >
+          </div>
+          
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+            </div>
+            
+            <p class="project-description">
+              A responsive portfolio website with a contact form that sends emails 
+              using a custom Node.js backend. Features include form validation, 
+              honeypot spam protection, and a mobile-first responsive design.
+            </p>
+            
+            <div class="project-highlights">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Custom email API with Resend integration</li>
+                <li>Client-side and server-side form validation</li>
+                <li>Responsive grid layout for all screen sizes</li>
+                <li>Accessible semantic HTML structure</li>
+              </ul>
+            </div>
+            
+            <div class="project-links">
+              <a href="https://your-live-site.com" class="project-link primary" target="_blank" rel="noopener noreferrer">
+                <span>View Live</span>
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="https://github.com/ROIEngineer/your-repo" class="project-link secondary" target="_blank" rel="noopener noreferrer">
+                <span>View Code</span>
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card reverse">
+          <div class="project-image-container">
+            <img 
+              src="images/project2-screenshot.jpg" 
+              alt="Screenshot of your second project"
+              class="project-image"
+            >
+          </div>
+          
+          <div class="project-content">
+            <h3 class="project-title">Project Name Here</h3>
+            
+            <div class="project-tags">
+              <span class="tag">Technology 1</span>
+              <span class="tag">Technology 2</span>
+              <span class="tag">Technology 3</span>
+            </div>
+            
+            <p class="project-description">
+              Brief description of what this project does and why you built it. 
+              Focus on the problem it solves or the skills it demonstrates.
+            </p>
+            
+            <div class="project-highlights">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Feature or skill you demonstrated</li>
+                <li>Another important aspect</li>
+                <li>What makes this project unique</li>
+              </ul>
+            </div>
+            
+            <div class="project-links">
+              <a href="#" class="project-link primary" target="_blank" rel="noopener noreferrer">
+                <span>View Live</span>
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="#" class="project-link secondary" target="_blank" rel="noopener noreferrer">
+                <span>View Code</span>
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-image-container">
+            <img 
+              src="images/project3-screenshot.jpg" 
+              alt="Screenshot of your third project"
+              class="project-image"
+            >
+          </div>
+          
+          <div class="project-content">
+            <h3 class="project-title">Another Project</h3>
+            
+            <div class="project-tags">
+              <span class="tag">Technology 1</span>
+              <span class="tag">Technology 2</span>
+            </div>
+            
+            <p class="project-description">
+              What this project does and what you learned while building it.
+            </p>
+            
+            <div class="project-highlights">
+              <h4>What I Learned:</h4>
+              <ul>
+                <li>New skill or concept you mastered</li>
+                <li>Challenge you overcame</li>
+                <li>Best practice you implemented</li>
+              </ul>
+            </div>
+            
+            <div class="project-links">
+              <a href="#" class="project-link primary" target="_blank" rel="noopener noreferrer">
+                <span>View Live</span>
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="#" class="project-link secondary" target="_blank" rel="noopener noreferrer">
+                <span>View Code</span>
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME SECTION -->
+    <section class="why-section section-set">
+      <div class="why-container">
+        
+        <h2 class="why-title">Why Work With Me?</h2>
+        
+        <div class="why-grid">
+          
+          <div class="why-card">
+            <div class="why-icon">🧠</div>
+            <h3>I Actually Care</h3>
+            <p>
+              I'm not just checking boxes or following tutorials. Every project 
+              I build, I genuinely want to understand how it works and make it better. 
+              This isn't just a job for me—it's a craft I'm constantly refining.
+            </p>
+          </div>
+          
+          <div class="why-card">
+            <div class="why-icon">💬</div>
+            <h3>Clear Communication</h3>
+            <p>
+              I believe in over-communicating. Whether it's explaining technical 
+              decisions, asking clarifying questions, or providing updates, you'll 
+              always know where things stand. No surprises, no guessing.
+            </p>
+          </div>
+          
+          <div class="why-card">
+            <div class="why-icon">🚀</div>
+            <h3>Growth Mindset</h3>
+            <p>
+              Being self-taught means I'm comfortable with not knowing everything—and 
+              excited to learn it. I don't see challenges as roadblocks; I see them 
+              as opportunities to level up my skills.
+            </p>
+          </div>
+          
+          <div class="why-card">
+            <div class="why-icon">🎯</div>
+            <h3>Results-Focused</h3>
+            <p>
+              I don't build things just to build them. I focus on creating solutions 
+              that actually work, are maintainable, and solve the problem they're 
+              meant to solve. Clean code matters, but impact matters more.
+            </p>
+          </div>
+          
         </div>
       </div>
     </section>
 
-    <!-- TIC TAC TOE -->
-    <section class="section-set">
-      <div class="section-container">
-        <div class="section-text">
-          <h2 class="section-title">Tic-Tac-Toe</h2>
-          <p class="section-copy">A clean, modular Tic-Tac-Toe game built with factory functions and IIFE patterns, showcasing zero global pollution and separation of concerns. Features two-player gameplay, win detection, and a fully encapsulated game logic system with DOM-driven UI.</p>
-          <a href="https://odin-tic-tac-toe-ecru.vercel.app/" target="_blank" rel="noopener noreferrer" class="learn-more">View Demo</a>
-        </div>
-        <div class="section-image-container">
-          <img src="images/ttt.png" alt="Screenshot of a clean Tic-Tac-Toe game interface showing a 3x3 grid with X and O marks. The game includes player name inputs, a reset button, and a highlighted winning combination in blue." class="section-image" loading="lazy" width="400" height="300">
-        </div>
-      </div>
-    </section>
 
-    <!-- ETCH A SKETCH -->
-    <section class="section-set">
-      <div class="section-container">
-        <div class="section-image-container">
-          <img src="images/etch.png" alt="Screenshot of the Etch-a-Sketch web app showing a square drawing grid with interactive controls. The interface includes a "Squares Per Side" button, a "Clear Drawing" button, and a grid of white squares where some have been shaded to create a simple drawing." class="section-image" loading="lazy" width="400" height="300">
-        </div>
-        <div class="section-text">
-          <h2 class="section-title">Etch-a-Sketch</h2>
-          <p class="section-copy">A browser-based drawing grid built with HTML, CSS, and JavaScript. Features a customizable grid size, hover-to-draw interaction, and an intuitive reset option — all without external libraries.</p>
-          <a href="https://etch-a-sketch-teal-zeta.vercel.app/" rel="noopener noreferrer" target="_blank" class="learn-more">View Demo</a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!--  FOOTER  -->

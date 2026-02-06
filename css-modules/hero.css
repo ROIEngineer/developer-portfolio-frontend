@@ -1,75 +1,193 @@
+/* =========================
+   HERO SECTION
+   ========================= */
+
 #hero {
-  color: var(--text-color);
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding: 4rem 1rem;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
+  padding: 80px 20px 60px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
 }
 
 .hero-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  padding: 1.25rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
-/* TEXT CONTENT */
-.hero-text h1 {
-  font-size: 3rem;
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+/* Hero Content */
+.hero-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-greeting {
+  font-size: 18px;
+  color: #94a3b8;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0 0 25px 0;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  color: white;
 }
 
-.hero-text p {
-  font-size: 1.125rem;
-  margin-bottom: 2.5rem;
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 35px;
   max-width: 600px;
 }
 
-.hero-text a {
-  font-size: 1rem;
-  font-weight: 600;
-  display: inline-block;
-  padding: 0.875rem 2rem;
-  border-radius: 50px;
-  border: 1px solid var(--text-color);
-  transition: all 0.3s ease;
-}
-
-/* BUTTONS STYLING */
-.hero-text > div {
+/* Call-to-Action Buttons */
+.hero-cta {
   display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
 }
 
-/* "HIRE ME" BUTTON */
-.hero-text a:first-child {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.cta-primary,
+.cta-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.cta-primary {
+  background: var(--button-color, #3b82f6);
   color: white;
-  border: none;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
-.hero-text a:first-child:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+.cta-primary:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
 
-/* "LET'S TALK" BUTTON */
-.hero-text a:last-child {
+.cta-secondary {
   background: transparent;
-  color: #4a5568;
-  border: 2px solid #cbd5e0;
+  color: white;
+  border: 2px solid #475569;
 }
 
-.hero-text a:last-child:hover {
-  background: #f7fafc;
-  border-color: #a0aec0;
-  transform: translateY(-3px);
+.cta-secondary:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Stats */
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--button-color, #3b82f6);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Hero Visual */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 4px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Code block alternative */
+.code-block {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 30px;
+  font-family: 'Courier New', monospace;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.code-block pre {
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.code-block code {
+  color: #94a3b8;
+}
+
+@media (max-width: 767px) {
+  .hero-cta {
+    flex-direction: column;
+  }
+  
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-stats {
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
