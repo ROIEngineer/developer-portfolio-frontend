@@ -15,11 +15,11 @@ form.addEventListener("submit", async (e) => {
     email: form.user_email.value.trim(),
     subject: form.user_subject.value.trim(),
     message: form.user_message.value.trim(),
-    company: form.company.value, // honeypot
+    company: form.company.value.trim(), // honeypot
   };
 
   try {
-    const response = await fetch("http://localhost:5000/api/contact", {
+    const response = await fetch("https://portfolio-backend-resend.onrender.com/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -37,3 +37,4 @@ form.addEventListener("submit", async (e) => {
     status.textContent = "Server error. Please try again later.";
   }
 });
+

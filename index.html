@@ -15,7 +15,6 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Meta Tags -->
@@ -67,69 +66,109 @@
       </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills">
-      <div class="skills-container">
-        <h2>Technologies I Work With</h2>
-        <div class="tech-stack">
-	  <!-- React -->
-          <div class="tech-item">
-	    <svg role="image" aria-label="React">
-              <use xlink:href="#react"></use>
-            </svg>
-            <div class="tech-name">React</div>
-          </div>
-
-	  <!-- Python -->
-          <div class="tech-item">
-	    <svg role="image" aria-label="Python">
-	      <use xlink:href="#python"></use>
-	    </svg>
-	    <div class="tech-name">Python</div>
-	  </div>
-
-          <!-- JavaScript -->
-          <div class="tech-item">
-            <svg role="image" aria-label="JavaScript">
-              <use xlink:href="#javascript"></use>
-            </svg>
-            <div class="tech-name">JavaScript</div>
-          </div>
-
-          <!-- Node.js -->
-          <div class="tech-item">
-            <svg role="image" aria-label="Node.js">
-              <use xlink:href="#nodejs"></use>
-            </svg>
-            <div class="tech-name">Node.js</div>
-          </div>
-
-          <!-- HTML5 -->
-          <div class="tech-item">
-	    <svg role="image" aria-label="HTML5">
-	      <use xlink:href="#html"></use>
-	    </svg>
-            <div class="tech-name">HTML5</div>
-          </div>
-
-          <!-- CSS3 -->
-          <div class="tech-item">
-	    <svg role="image" aria-label="CSS3">
-              <use xlink:href="#css3"></use>
-            </svg>
-            <div class="tech-name">CSS3</div>
-          </div>
-
-          <!-- Git -->
-          <div class="tech-item">
-	    <svg role="image" aria-label="Git">
-              <use xlink:href="#git"></use>
-            </svg>
-            <div class="tech-name">Git</div>
+  <!-- TECH STACK SECTION -->
+  <section id="tech-stack" class="section-set">
+    <div class="tech-container">
+      <h2 class="tech-title">Technologies I Work With</h2>
+      <p class="tech-intro">
+        Here are the tools and technologies I use to build modern web applications
+      </p>
+      
+      <div class="tech-grid">
+        
+        <!-- Frontend Technologies -->
+        <div class="tech-category">
+          <h3 class="category-title">Frontend</h3>
+          <div class="tech-items">
+            
+            <div class="tech-item">
+              <svg class="tech-icon" aria-hidden="true">
+                <use href="#javascript"></use>
+              </svg>
+              <div class="tech-info">
+                <h4>JavaScript</h4>
+                <p class="tech-level">Proficient</p>
+                <p class="tech-description">ES6+, async/await, DOM manipulation</p>
+              </div>
+            </div>
+            
+            <div class="tech-item">
+              <svg class="tech-icon" aria-hidden="true">
+                <use href="#html"></use>
+              </svg>
+              <div class="tech-info">
+                <h4>HTML5</h4>
+                <p class="tech-level">Proficient</p>
+                <p class="tech-description">Semantic markup, accessibility, forms</p>
+              </div>
+            </div>
+            
+            <div class="tech-item">
+              <svg class="tech-icon" aria-hidden="true">
+                <use href="#css3"></use>
+              </svg>
+              <div class="tech-info">
+                <h4>CSS3</h4>
+                <p class="tech-level">Proficient</p>
+                <p class="tech-description">Flexbox, Grid, responsive design</p>
+              </div>
+            </div>
+            
           </div>
         </div>
+        
+        <!-- Backend Technologies -->
+        <div class="tech-category">
+          <h3 class="category-title">Backend</h3>
+          <div class="tech-items">
+            
+            <div class="tech-item">
+              <svg class="tech-icon" aria-hidden="true">
+                <use href="#nodejs"></use>
+              </svg>
+              <div class="tech-info">
+                <h4>Node.js</h4>
+                <p class="tech-level">Intermediate</p>
+                <p class="tech-description">Express, REST APIs, server-side logic</p>
+              </div>
+            </div>
+            
+            <div class="tech-item">
+              <svg class="tech-icon" aria-hidden="true">
+                <use href="#python"></use>
+              </svg>
+              <div class="tech-info">
+                <h4>Python</h4>
+                <p class="tech-level">Learning</p>
+                <p class="tech-description">Scripting, data processing basics</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Tools & Workflow -->
+        <div class="tech-category">
+          <h3 class="category-title">Tools</h3>
+          <div class="tech-items">
+            
+            <div class="tech-item">
+              <svg class="tech-icon" aria-hidden="true">
+                <use href="#git"></use>
+              </svg>
+              <div class="tech-info">
+                <h4>Git</h4>
+                <p class="tech-level">Proficient</p>
+                <p class="tech-description">Version control, branching, collaboration</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- PORTFOLIO WEBSITE -->
     <section id="portfolio-web" class="section-set">
