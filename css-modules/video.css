@@ -1,13 +1,22 @@
 /* VIDEO CONTAINER */
 .video-container {
   position: relative;
-  border-radius: 20px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   background: #000;
   aspect-ratio: 16/9;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Effect for Video Container */
+.video-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 70px rgba(56, 130, 246, 0.4);
+}
+
+/* Video Element */
 .intro-video {
   width: 100%;
   height: 100%;
@@ -15,33 +24,158 @@
   display: block;
 }
 
+/* Fallback Image inside Video */
 .intro-video img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Video Caption Overlay */
 .video-caption {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
-  padding: 1.5rem 1rem 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  padding: 2rem 1.5rem 1.25rem;
   color: white;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show caption on hover */
+.video-container:hover .video-caption {
+  opacity: 1;
 }
 
 .video-caption small {
-  font-size: 0.9rem;
-  opacity: 0.9;
+  font-size: 0.95rem;
+  opacity: 0.95;
   letter-spacing: 0.5px;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* New wrapper */
+/* Video Wrapper */
 .video-wrapper {
   display: block;
-  max-width: 800px; /* Optional: constrain width */
-  margin: 0 auto; /* Optional: center */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Play Button Overlay (optional - for videos that aren't autoplay) */
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(56, 130, 246, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.video-play-button:hover {
+  background: var(--button-color);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 10px 30px rgba(56, 130, 246, 0.5);
+}
+
+.video-play-button::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 25px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  margin-left: 5px;
+}
+
+/* Hide play button when video is playing */
+.video-container.playing .video-play-button {
+  display: none;
+}
+
+/* Loading State */
+.video-container.loading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top-color: var(--button-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 5;
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Responsive Video */
+@media (max-width: 768px) {
+  .video-container {
+    border-radius: 8px;
+  }
+
+  .video-caption {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .video-caption small {
+    font-size: 0.85rem;
+  }
+
+  .video-play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .video-play-button::after {
+    border-left: 18px solid white;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+  }
+}
+
+/* Alternative: Full-width video background style */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background .intro-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  filter: brightness(0.7);
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.6) 100%);
+  z-index: 1;
+}
