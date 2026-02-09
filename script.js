@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
-
 });
 
 /* Project Scroll Down */
