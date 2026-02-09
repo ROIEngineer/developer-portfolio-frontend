@@ -7,3 +7,5 @@
 @import "./css-modules/projects.css";
 @import "./css-modules/tech.css";
 @import "./css-modules/why.css";
+
+* { outline: 2px solid red; }
