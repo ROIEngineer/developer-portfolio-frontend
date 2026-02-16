@@ -8,8 +8,8 @@ This is the frontend portion of a full-stack portfolio application. Built with v
 
 ## Live Demo
 
-**Live Site:** [Your deployed frontend URL]  
-**GitHub Repository:** [Your repository URL]
+**Live Site:** [Frontend URL](https://portfolio-web-six-ashen.vercel.app/)  
+**GitHub Repository:** [Repository URL]()
 
 ## Features
 
@@ -622,10 +622,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 **Harold Durant**  
-Email: [Your Email]  
+Email: MrDurant2023@gmail.com
 GitHub: [@ROIEngineer](https://github.com/ROIEngineer)  
-Portfolio: [Your Portfolio URL]
-
----
-
-Built with ❤️ using HTML, CSS, and JavaScript
+Portfolio: [Portfolio URL](https://portfolio-web-six-ashen.vercel.app/)
