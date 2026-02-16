@@ -9,7 +9,6 @@ This is the frontend portion of a full-stack portfolio application. Built with v
 ## Live Demo
 
 **Live Site:** [Frontend URL](https://portfolio-web-six-ashen.vercel.app/)  
-**GitHub Repository:** [Repository URL]()
 
 ## Features
 
