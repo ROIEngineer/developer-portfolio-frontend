@@ -622,6 +622,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 **Harold Durant**  
-Email: MrDurant2023@gmail.com
+Email: [Email](MrDurant2023@gmail.com)
 GitHub: [@ROIEngineer](https://github.com/ROIEngineer)  
 Portfolio: [Portfolio URL](https://portfolio-web-six-ashen.vercel.app/)
