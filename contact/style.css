@@ -1,12 +1,25 @@
 /* =========================
-   GLOBAL RESET & VARIABLES
+   IMPORTS - Load base styles first
    ========================= */
 @import "../css-modules/base.css";
 @import "../css-modules/header.css";
 
+/* =========================
+   HEADER OVERRIDES FOR CONTACT PAGE
+   ========================= */
 .site-header { 
-  background: var(--dark-bg); 
-  color: white;
+  background: var(--dark-bg) !important; 
+  color: white !important;
+}
+
+.site-header a,
+.site-header nav a {
+  color: white !important;
+}
+
+.site-header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
 }
 
 body { background: #0f172a; }
@@ -28,8 +41,15 @@ body { background: #0f172a; }
 @media (min-width: 768px) {
   .contact-layout {
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: stretch; /* Changed from start to stretch */
   }
+}
+
+/* Make sections full height */
+.about-section,
+.contact-section {
+  display: flex;
+  flex-direction: column;
 }
 
 /* =========================
@@ -44,6 +64,7 @@ body { background: #0f172a; }
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
+  height: 100%; /* Match height of tallest card */
 }
 
 .card-header { margin-bottom: 1rem; }
